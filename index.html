@@ -98,6 +98,100 @@
             </div>
         </section>
         <!-- hero Section End  -->
+
+           <!-- Product Card Design Start  -->
+        <section class="bg-[#f0fdf4] px-[10px] md:px-[80px] py-[30px] md:py-[60px] space-y-6 md:space-y-10">
+            <!-- Title Section -->
+            <div>
+                <h2 class="text-[26px] md:text-[32px] font-semibold capitalize text-center">Choose Your Trees</h2>
+            </div>
+
+            <!-- All Categories -->
+              <!-- All Products (Spinner)-->
+                <!-- Cart Item show -->
+            <div class="grid md:grid-cols-12 gap-[30px]">
+
+                <!--All Categories -->
+                <div class="md:col-span-2 space-y-4">
+                    <div>
+                        <h3 class="text-[20px] font-semibold">Categories</h3>
+                    </div>
+                    <!-- All Categories sec -->
+                    <div class="flex flex-wrap md:flex-col gap-2 md:gap-1">
+                        <!-- Categories name show -->
+                        <div class="flex flex-col">
+                            <button id="allcategoryBtn" onclick="loadAllTrees()"
+                                class="category-btn py-2 px-3 text-[#1F2937] rounded-[4px] text-start w-full bg-[#15803D]/10 md:bg-transparent hover:bg-[#15803D]/70 hover:text-white duration-300 cursor-pointer">
+                                All Trees </button>
+                        </div>
+                        <div id="categories-container" class="flex flex-wrap md:flex-col gap-2 md:gap-1">
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- All products and Spinner-->
+                <div class="md:col-span-8 ">
+                    <!-- Spinner Setup -->
+                    <div id="spinner" class="hidden text-center p-10">
+                        <span class="loading loading-spinner text-error"></span>
+                    </div>
+
+                    <!-- product Container -->
+                    <div id="trees-container" class="grid md:grid-cols-3 gap-[20px] md:gap-[30px]">
+                        <!-- products item show -->
+                    </div>
+                </div>
+
+                <!-- Cart Item -->
+                <div class="md:col-span-2 space-y-4 bg-white rounded-[16px] p-4 ">
+                    <div>
+                        <h3 class="text-[20px] font-semibold">Your Cart</h3>
+                    </div>
+
+                    <div class="space-y-2">
+                        <!-- cart item -->
+                        <div id="add-to-cart-container" class="space-y-2">
+                            <!-- cart Item  Show -->
+                        </div>
+
+                       
+                        <div>
+                            <span class="h-[2px] w-full bg-[#1F2937]/25 block"></span>
+                        </div>
+                        <!-- Show Total Amount in cart  -->
+                        <div class="flex justify-between items-center">
+                            <h4 class="font-semibold mb-1">Total:</h4>
+                            <h4 id="total-amount" class="font-semibold mb-1">৳0</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal Function Design start  -->
+        <section>
+            <!-- Modal -->
+            <dialog id="productDetailsModal" class="modal">
+                <div class="modal-box ">
+                    
+                    <button onclick="productDetailsModal.close()"
+                        class="bg-[#DCFCE7] h-12 w-12 rounded-full text-[18px] text-black font-bold hover:bg-[#15803D] hover:text-white duration-300  absolute right-2 top-3 cursor-pointer">✕</button>
+
+                    <div id="tree-details-container">
+                        <!-- tree details show using js -->
+                    </div>
+                </div>
+                <!-- backdrop -- Close the Modal by clicking anywhere on the screen -->
+                <form method="dialog" class="modal-backdrop cursor-default">
+                    <button class="cursor-default"></button>
+                </form>
+            </dialog>
+        </section>
+        <!-- Modal Function Design End  -->
+
+        <script src="js/index.js"></script>
+        
     </main>
 
 
