@@ -3,13 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emergency Service call system assingment</title>
+      <!-- Title and FavIcon -->
+    <title>Green Earth Landing page Design</title>
+    <link rel="shortcut icon" href="assets/favicon.png" type="image/x-icon">
+
+    <!-- FontAwesome Icon  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Google Font (Inter) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind and DaisyDI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 <body>
 
-    <header>
+<!-- Main Header  Start  -->
+    <header class="bg-[#15803D]  px-[10px] md:px-[80px]">
+        <div class="navbar py-6 px-0">
+            <!-- Nav Logo  -->
+            <div class="navbar-start">
+                <div class="dropdown">
+                    <div tabindex="0" role="button"
+                        class="cursor-pointer lg:hidden text-white hover:text-[#FACC15]  duration-300 mr-1 md:mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 " fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M4 6h16M4 12h8m-8 6h16" />
+                        </svg>
+                    </div>
+                    <ul tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-4 shadow">
+                        <li><a class=" text-[16px]">About</a></li>
+                        <li><a class=" text-[16px]">Gallery</a></li>
+                        <li><a class="text-[16px]">Plant a Tree</a></li>
+                    </ul>
+                </div>
 
-    </header>
+                <a class="text-[18px] md:text-[24px] font-bold text-white">Green Earth</a>
+            </div>
+            <!-- Nav Menu Start -->
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 font-medium text-white text-[16px]">
+                    <li><a>About</a></li>
+                    <li><a>Gallery</a></li>
+                    <li><a>Plant a Tree</a></li>
+                </ul>
+            </div>
+              <!-- Nav Menu End -->
+
+            <!-- Header Btn start -->
+            <div class="navbar-end">
+                <a
+                    class="bg-[#FACC15] py-3 px-5 rounded-full text-[#15803D] font-medium hover:bg-[#ffffff]  duration-300 cursor-pointer">Plant
+                    a Tree</a>
+            </div>
+            <!-- Header Btn End -->
+        </div>
+        <!-- Main Header  End  -->
+
 
     <main>
 
